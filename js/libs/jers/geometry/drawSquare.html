@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <div id="my-svg"></div>
+</body>
+<script src="./point.js"></script>
+<script src="./square.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/raphael@2.2.7/raphael.min.js"></script>
+<script>
+p1 = new Point(30,40);
+s1 = new Square(p1,300);
+    var paper = Raphael(document.getElementById('my-svg'), 600, 400); //alto x ancho
+    /*var rect = paper.rect(0,0,600,400);
+    rect.attr('fill', '#FFF');
+    var circle = paper.circle(300, 200, 120);
+    circle.attr('fill', '#FF0');
+    circle.attr('stroke-width',0);*/
+    var square = paper.rect(s1.p1.x,s1.p1.y,s1.large/2,s1.large/2);
+    //var square = paper.path(s1.draw());
+    square.attr('fill','blue');
+</script>
+</html>

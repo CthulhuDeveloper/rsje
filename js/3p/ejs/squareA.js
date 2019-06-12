@@ -1,0 +1,1 @@
+var square = (a) => typeof(a) === 'number'? a*a:"Valor incorrecto";

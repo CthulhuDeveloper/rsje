@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="my-svg"></div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/raphael@2.2.7/raphael.min.js"></script>
+<script src="./point.js"></script>
+<script src="./circle.js"></script>
+<script>
+    p1 = new Point(300,500);
+    c1 = new Circle(p1, 200)
+    var paper = Raphael(document.getElementById('my-svg'), 1000, 800); //alto x ancho
+    var circle = paper.circle(c1.p.x, c1.p.y, c1.r);
+    circle.attr('fill', '#FF0');
+    circle.attr('stroke-width',0);
+</script>
+</html>

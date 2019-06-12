@@ -1,0 +1,1 @@
+var cube = (a) => typeof(a) === 'number'? a**3:"Valor incorrecto";

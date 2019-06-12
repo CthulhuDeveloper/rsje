@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Use Figures</title>
+    <script src=".\..\..\libs\jers\geometry\line.js"></script><!--El punto indica que se está accediendo a la carpet actual-->
+    <script src=".\..\..\libs\jers\geometry\circle.js"></script>
+    <script src=".\..\..\libs\jers\geometry\point.js"></script>
+    <script src=".\..\..\libs\jers\geometry\rectangle.js"></script>
+    <script src=".\..\..\libs\jers\geometry\square.js"></script>    
+    <script src=".\..\..\libs\jers\geometry\triangle.js"></script>
+</head>
+<style>
+    *{
+        font-family: Trebuchet MS;
+        color: gray;
+    }
+</style>
+<body>
+    <h2>Rectangle</h2>
+    <div id="rect"></div>
+    <h2>Circle</h2>
+    <div id="circle"></div>
+    <h2>Line</h2>
+    <div id="line"></div>
+    <h2>Square</h2>
+    <div id="square"></div>
+    <h2>Triangle</h2>
+    <div id="triangle"></div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/raphael@2.2.7/raphael.min.js"></script>
+<script>
+    //Rectangle
+    pRec1 = new Point(100,50);
+    pRec2 = new Point(200,300);
+    r1 = new Rectangle(pRec1,pRec2);
+    var rec = Raphael(document.getElementById('rect'), 600, 400); //alto x ancho
+    var rect = rec.rect(r1.p1.x,r1.p1.y,r1.getBase(),r1.getAltura());
+    rect.attr('fill','orange');
+
+    //Circle
+    pCircle = new Point(100,100);
+    c1 = new Circle(pCircle, 50)
+    var pCircle = Raphael(document.getElementById('circle'), 600, 400); //alto x ancho
+    var circle = pCircle.circle(c1.p.x, c1.p.y, c1.r);
+    circle.attr('fill', 'red');
+    circle.attr('stroke-width',0);
+
+    //Line
+    pLine1 = new Point(50,50);
+    pLine2 = new Point(400,120);
+    l1 = new Line(pLine1,pLine2);
+    var lineP = Raphael(document.getElementById('line'), 600, 400); //alto x ancho
+    var line = lineP.path(l1.draw());
+    line.attr('fill','yellow');
+
+    //Square
+    pSqua = new Point(30,40);
+    s1 = new Square(pSqua,300);
+    var squa = Raphael(document.getElementById('square'), 600, 400); //alto x ancho
+    var square = squa.rect(s1.p1.x,s1.p1.y,s1.large/2,s1.large/2);
+    square.attr('fill','blue');
+
+    //Triangle
+    pTrian1 = new Point(100,100);
+    pTrian2 = new Point(500,100);
+    pTrian3 = new Point(100,400);
+    t1 = new Triangle(pTrian1,pTrian2,pTrian3);
+    var trian = Raphael(document.getElementById('triangle'), 600, 400); //alto x ancho
+    var triangle = trian.path(t1.draw());
+    triangle.attr('fill','yellow');
+</script>
+</html>
