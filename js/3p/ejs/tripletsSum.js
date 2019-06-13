@@ -13,5 +13,5 @@ function getValue(){
             }            
         }            
     }  
-    console.log(contador);
+    document.getElementById('parrafo').value = 'Cantidad: ' + contador;
 }

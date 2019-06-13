@@ -1,0 +1,66 @@
+//Se muestra la relación de los nombres propuestos por el profesor y los que yo le he puesto a mis archivos.
+
+EXERCISE:
+randN//min, max, avg : Text.js
+
+EXERCISES:
+p1 - htm - ex
+10dec //random : 10AleatoriosDecimales.html, aleatorio.js
+10int //random : 10Aleatorios.html, aleatorio.js
+Fraction //htm5, euclides : fracciones.html, fraction.js
+3-sum : tripletsSum.html, tripletsSum.js
+nlp+htm : npl.html, npl.js
+
+SAMPLE: HTM from gist
+
+EXERCISES: convert
+euros <-> dolares : divisas.html, divisas.js
+grados K <-> C : tempconvert.html, tempConvert.js
+km <-> millas : distanceConvert.html, distanceConvert.js
+galones <-> litros : water.html, water.js
+radianes <-> grados : radtograde.html, radtograde.js
+
+SAMPLES: Reduce
+
+EXERCISES: p1 - 4 - exe
+subtracter : subtracter.js
+divisor : divisor.js
+var : varianza.js
+
+SAMPLES: Map
+
+EXERCISES: p1 - 3 - exe
+cube : CuboMap.js
+square : SquareMap.js
+subt3 : sub3Map.js
+*mapeoArreglo.js*
+
+SAMPLES: 
+arrow, string
+
+EXERCISES: - p1 - 1 - exe 
+sumUpTo(a,b) : sumador.js
+mulUpTo(a,b) : multiplicador.js
+square(n) : squareA.js
+cube(n) : cube.js 
+srqt(n) : sroot.js
+
+chars() : Text.js
+words() : Text.js
+sentences() : Text.js
+paragraphs() : Text.js
+
+SAMPLES: IIFE
+ejemplos.js
+
+EXERCISES: - p1 - 1 - exe
+abcd.js : abcd.js
+(to be explained in session)
+
+SAMPLES: ES6 modules
+car.htm, car.js 
+
+EXERCISES: - p1 - 1 - exe
+circulo.htm : drawCircle.js
+circulo.js : circle.js
+(requires point.js)

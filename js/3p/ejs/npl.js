@@ -55,4 +55,13 @@
             return vec.length;
         }
     }
+
+    function getVal(){
+        v = new Text(document.getElementById('textarea').value);
+        document.getElementById('caracteres').value = v.chars();
+        document.getElementById('palabras').value = v.words();
+        document.getElementById('sentences').value = v.sentences();
+        document.getElementById('parrafos').value = v.paragraphs();
+
+    }
 //}
